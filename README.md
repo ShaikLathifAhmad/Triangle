@@ -4,6 +4,124 @@
 
 **Turning customer conversations into actionable deal intelligence.**
 
+---
+
+## Quick Setup
+
+### Prerequisites
+- Python 3.12+
+- Node.js 18+
+- MySQL 8.0+
+
+---
+
+### Step 1 — MySQL Database Banao
+
+```sql
+CREATE DATABASE triangle_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+---
+
+### Step 2 — Backend Setup
+
+```bash
+cd backend
+
+# Virtual environment
+python -m venv venv
+
+# Activate — Windows (Git Bash):
+source venv/Scripts/activate
+# Activate — Windows (PowerShell):
+.\venv\Scripts\Activate
+# Activate — Mac/Linux:
+source venv/bin/activate
+
+# Dependencies install karo
+pip install -r requirements.txt
+
+# .env file banao
+cp .env.example .env
+```
+
+`backend/.env` fill karo:
+
+```env
+OPENROUTER_API_KEY=your_openrouter_api_key
+OPENROUTER_MODEL=nvidia/nemotron-3-ultra-550b-a55b
+OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+
+HINDSIGHT_API_KEY=your_hindsight_api_key
+HINDSIGHT_BASE_URL=https://api.hindsight.vectorize.io
+HINDSIGHT_BANK_ID=Triangle
+
+DATABASE_URL=mysql+pymysql://root:YOUR_PASSWORD@localhost:3306/triangle_db
+
+BACKEND_URL=http://localhost:8000
+FRONTEND_URL=http://localhost:8443
+
+SECRET_KEY=your-strong-secret-key-here
+```
+
+```bash
+# Demo data seed karo
+python seed.py --reset
+
+# Server start karo
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+Backend: **http://localhost:8000** | API Docs: **http://localhost:8000/docs**
+
+---
+
+### Step 3 — Frontend Setup
+
+```bash
+cd frontend
+
+# Dependencies install karo
+npm install
+
+# .env file banao
+cp .env.example .env
+```
+
+`frontend/.env` mein:
+
+```env
+VITE_BACKEND_URL=http://localhost:8000
+```
+
+```bash
+# Dev server start karo
+npm run dev
+```
+
+Frontend: **http://localhost:8443**
+
+---
+
+### Demo Login
+
+```
+Email:    alex.morgan@triangle.ai
+Password: password123
+```
+
+---
+
+### API Keys
+
+| Service | Link |
+|---------|------|
+| OpenRouter | https://openrouter.ai |
+| Hindsight Cloud | https://www.hindsight.vectorize.io |
+
+---
+
+
 <details>
 <summary><strong>📌 Project Overview</strong></summary>
 
