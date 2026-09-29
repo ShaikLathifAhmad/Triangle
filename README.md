@@ -27,12 +27,15 @@ In short, Triangle is designed to move beyond a basic AI chatbot by combining **
 <details>
 <summary><strong> Key Features</strong></summary>
 
-* **Deal Management:** Organize deals and track customer interactions.
-* **AI Meeting Briefings:** Generate personalized meeting preparation using deal information and past conversations.
-* **Persistent AI Memory:** Retain and retrieve relevant context from previous interactions using Hindsight.
-* **Conversation Intelligence:** Retrieve relevant information from previous customer conversations.
-* **Objection Analysis:** Identify potential customer concerns and generate suggested responses.
-* **Meeting Outcomes:** Record meeting results and preserve important deal context.
+Deal & Customer Management: Organize deals, customer information, sales stages, requirements, interactions, and follow-up commitments in one place.
+AI-Powered Meeting Briefings: Generate personalized meeting preparation summaries using current deal data and relevant historical conversations.
+Persistent AI Memory: Store and retrieve important customer preferences, requirements, objections, decisions, commitments, and meeting outcomes using Hindsight Cloud.
+Intelligent Context Retrieval: Retrieve only the most relevant information from previous customer interactions instead of processing the entire conversation history.
+AI-Powered Objection Analysis: Identify potential customer concerns, unresolved requirements, and objections, while generating suggested responses and discussion points.
+Actionable Deal Intelligence: Transform historical customer information into useful sales signals, including follow-up opportunities, commitments, discussion points, and relevant deal context.
+Meeting Outcome Tracking: Capture meeting results, newly discovered requirements, customer concerns, and important decisions for future interactions.
+Continuous Learning & Context Updating: Automatically preserve new meeting information in the deal's memory, creating a continuous interaction → memory → retrieval → AI reasoning → outcome feedback loop.
+AI-Generated Sales Insights: Provide key discussion points, potential objections, suggested responses, customer context, and follow-up considerations through the React interface.
 
 </details>
 
