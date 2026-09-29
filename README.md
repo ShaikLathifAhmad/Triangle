@@ -168,15 +168,31 @@ As a result, Triangle is designed to become increasingly context-aware as the de
 ```mermaid
 flowchart TD
     A["React Frontend"] --> B["FastAPI Backend"]
-    B --> C["PostgreSQL"]
-    B --> D["Hindsight Cloud"]
-    B --> E["OpenRouter"]
-    E --> F["NVIDIA Nemotron"]
+    B --> C["PostgreSQL<br/>Deal Data"]
+    B --> D["Hindsight Cloud<br/>Persistent Memory"]
+    B --> E["OpenRouter<br/>AI Gateway"]
+    E --> F["NVIDIA Nemotron<br/>AI Model"]
     C --> B
     D --> B
     F --> B
-    B --> A
+    B --> G["AI-Powered<br/>Deal Intelligence"]
+    G --> A
 ```
+Why this is stronger
+
+It now clearly represents the four architectural layers:
+
+1. Presentation Layer
+React provides the user-facing interface for sales representatives.
+
+2. Application Layer
+FastAPI acts as the central coordinator, managing deal information, memory retrieval, and AI processing.
+
+3. Data & Memory Layer
+PostgreSQL handles structured deal data, while Hindsight Cloud provides persistent memory for previous customer interactions.
+
+4. AI Intelligence Layer
+OpenRouter connects the application to NVIDIA Nemotron, which processes the combined current deal information and retrieved historical context.
 
 </details>
 
