@@ -1,0 +1,10 @@
+{
+  "description": "An AI-powered Deal Intelligence Platform that helps sales representatives manage deals and prepare for meetings with personalized insights and persistent memory.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

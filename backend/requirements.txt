@@ -1,0 +1,28 @@
+# TRIANGLE - AI Deal Intelligence Platform
+# Python Backend Dependencies
+
+# FastAPI Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12
+
+# Database
+sqlalchemy>=2.0.35
+python-dotenv>=1.0.1
+
+# HTTP Client
+httpx>=0.27.2
+
+# MySQL Driver
+PyMySQL>=1.1.0
+cryptography>=41.0.0
+
+# Hindsight Cloud Integration
+hindsight-client>=0.1.0
+
+# Data Validation
+pydantic>=2.9.2
+
+# Authentication
+PyJWT>=2.8.0
+bcrypt>=4.0.0
