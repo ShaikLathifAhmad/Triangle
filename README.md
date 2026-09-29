@@ -7,9 +7,20 @@
 <details>
 <summary><strong>📌 Project Overview</strong></summary>
 
-Triangle is an AI-powered Deal Intelligence Platform designed to help B2B sales representatives and account executives prepare for customer meetings, understand customer concerns, and make informed sales decisions.
+### 📌 Project Overview
 
-By combining AI-powered insights with persistent memory, Triangle retains relevant context from past deal interactions and uses it to generate personalized meeting briefings. This helps sales teams maintain continuity across conversations and preserve important customer information.
+Triangle is an **AI-powered Deal Intelligence Platform** built to help B2B sales representatives and account executives turn customer conversations and deal history into **actionable meeting intelligence**.
+
+Sales teams often need to recall important details from multiple customer interactions—such as requirements, preferences, objections, decisions, commitments, and previous meeting outcomes. Triangle addresses this challenge by combining **AI-powered reasoning with persistent deal memory**, allowing relevant context from earlier interactions to be retained, retrieved, and reused when preparing for future customer meetings.
+
+The platform follows a continuous **Capture → Remember → Retrieve → Analyze → Generate → Learn** workflow. Deal and customer information is captured and stored as persistent context using **Hindsight Cloud**. When a new meeting is being prepared, Triangle retrieves the information most relevant to the current deal and combines it with the latest deal context. This focused information is then processed through **OpenRouter and NVIDIA Nemotron** to identify customer concerns, unresolved requirements, potential objections, previous commitments, discussion points, and follow-up opportunities.
+
+Triangle converts these insights into personalized **meeting preparation summaries, key discussion points, potential objections, suggested responses, important customer context, and follow-up considerations**, which are presented through a React interface.
+
+After each interaction, new meeting outcomes and relevant customer information can be preserved in the deal's memory. This creates a continuous feedback loop in which the platform can maintain context across conversations as the deal progresses.
+
+In short, Triangle is designed to move beyond a basic AI chatbot by combining **deal management, persistent memory, contextual retrieval, and AI-powered reasoning** into a single workflow for sales meeting preparation and deal intelligence.
+
 
 </details>
 
